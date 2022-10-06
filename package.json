@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./Public/main.scss:./Public/css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JulienForestier/Projet-3.git"
   },
-  "author": "",
+  "author": "JulienForestier",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JulienForestier/Projet-3/issues"
