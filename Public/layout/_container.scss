@@ -1,4 +1,14 @@
 .conteneur{
     display: flex ;
     flex-direction: column;
+    &__texte--bold{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 25px 20% 5px 20%;
+    }
+    &__texte{
+        text-align: center;
+        margin: 5px 10% 20px 10%;
+    }
 }

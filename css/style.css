@@ -5,6 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: black;
+  box-sizing: border-box;
 }
 body h1, body h2, body h3, body h4, body h5 {
   font-family: "Shrikhand", sans-serif;
@@ -13,16 +14,39 @@ body h1, body h2, body h3, body h4, body h5 {
 header {
   display: flex;
   justify-content: center;
+  height: 60px;
+}
+header h1 {
+  margin: 10px 0 10px 0;
 }
 
 .conteneur {
   display: flex;
   flex-direction: column;
 }
+.conteneur__texte--bold {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 25px 20% 5px 20%;
+}
+.conteneur__texte {
+  text-align: center;
+  margin: 5px 10% 20px 10%;
+}
 
 .recherche {
-  font-weight: bold;
-  color: black;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: gray;
+}
+.recherche i {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.recherche input {
+  border: none;
+  background-color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

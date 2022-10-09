@@ -1,5 +1,13 @@
 .recherche{
-    font-weight: bold;
-    color: black;
-    
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: gray;
+    i{
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    input{
+        border: none;
+        background-color: gray;
+    }
 }
