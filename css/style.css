@@ -1,3 +1,28 @@
+body {
+  max-width: 1980px;
+  margin: auto;
+  min-width: 350px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Shrikhand", sans-serif;
+}
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.conteneur {
+  display: flex;
+  flex-direction: column;
+}
+
+.recherche {
+  font-weight: bold;
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
