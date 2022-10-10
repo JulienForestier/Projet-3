@@ -11,18 +11,76 @@ body h1, body h2, body h3, body h4, body h5 {
   font-family: "Shrikhand", sans-serif;
 }
 
+.btn {
+  border-radius: 20px;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: bold;
+}
+
+.functioning__btn {
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 90%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.functioning__btn p {
+  font-weight: bold;
+}
+
+.vignette {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.new {
+  display: inline-block;
+  text-align: center;
+  background-color: #99e2d0;
+  color: #30a387;
+  width: 60px;
+  height: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+}
+
 header {
   display: flex;
   justify-content: center;
   height: 60px;
+  margin-bottom: 1px;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 header h1 {
   margin: 10px 0 10px 0;
 }
 
+nav .conteneur {
+  background-color: #f6f6f6;
+  padding: 0 0 10px 0;
+  height: 200px;
+}
+
 .conteneur {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .conteneur__texte--bold {
   text-align: center;
@@ -33,20 +91,66 @@ header h1 {
 .conteneur__texte {
   text-align: center;
   margin: 5px 10% 20px 10%;
+  color: #4d4d4d;
 }
 
 .recherche {
   text-align: center;
   padding: 10px 0 10px 0;
-  background-color: gray;
+  color: #353535;
+  background-color: #eaeaea;
 }
 .recherche i {
   margin-right: 10px;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 .recherche input {
   border: none;
-  background-color: gray;
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+.functioning {
+  margin: 30px 0 30px 0;
+}
+
+.title-section {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 20px 20px;
+}
+
+.restaurant-prev {
+  width: 90%;
+  height: 220px;
+  border-radius: 15px;
+  margin: 20px 0 20px 0;
+  position: relative;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+.restaurant-prev__image {
+  height: 70%;
+  width: 100%;
+}
+.restaurant-prev img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.btn {
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.functioning__btn {
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
