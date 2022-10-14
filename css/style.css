@@ -44,8 +44,6 @@ body h1, body h2, body h3, body h4, body h5 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-.btn-secondary p {
   font-weight: bold;
   font-size: 14px;
 }
