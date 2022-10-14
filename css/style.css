@@ -41,6 +41,9 @@ body h1, body h2, body h3, body h4, body h5 {
   box-shadow: 4px 4px 4px lightgrey;
   background-color: #f6f6f6;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .btn-secondary p {
   font-weight: bold;
@@ -51,11 +54,6 @@ body h1, body h2, body h3, body h4, body h5 {
   color: #7e7e7e;
   margin-left: 9%;
   margin-right: 9%;
-}
-.btn-secondary__description {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 .btn-secondary .vignette {
   position: absolute;
