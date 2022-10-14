@@ -2,15 +2,21 @@
     display: flex ;
     flex-direction: column;
     align-items: center;
-    &__texte--bold{
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        margin: 25px 20% 5px 20%;
-    }
     &__texte{
         text-align: center;
-        margin: 5px 10% 20px 10%;
-        color: #4d4d4d;
+        margin: 30px 15% 0px 15%;
+        
+    }
+    &--bold{
+        font-weight: bold;
+        font-size: 22px;
+    }
+    &__description{
+        margin: 10px 10% 10px 10%;
+        text-align: center;
+        color: #656565;
     }
 }
+
+
+
