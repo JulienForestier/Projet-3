@@ -30,22 +30,27 @@ body h1, body h2, body h3, body h4, body h5 {
   background: linear-gradient(#FF79DA, #9356DC);
   font-weight: bold;
 }
+.btn:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 6px 6px 6px lightgray;
+}
 
 .btn-secondary {
   height: 70px;
   width: 85%;
   max-width: 350px;
+  min-width: 250px;
   padding: 10px;
   border: none;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px lightgrey;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 4px 4px 4px lightgray;
   background-color: #f6f6f6;
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-weight: bold;
-  font-size: 14px;
 }
 .btn-secondary i {
   font-size: 17px;
@@ -57,6 +62,13 @@ body h1, body h2, body h3, body h4, body h5 {
   position: absolute;
   top: 25px;
   left: -7px;
+}
+.btn-secondary:hover {
+  background: #f2eafb;
+  box-shadow: 6px 6px 6px lightgray;
+}
+.btn-secondary:hover i {
+  color: #9356DC;
 }
 
 .vignette {
@@ -98,6 +110,11 @@ nav .conteneur {
   padding: 0 0 10px 0;
   height: 240px;
 }
+@media screen and (min-width: 768px) {
+  nav .conteneur {
+    height: auto;
+  }
+}
 
 .conteneur {
   display: flex;
@@ -116,6 +133,15 @@ nav .conteneur {
   margin: 10px 10% 10px 10%;
   text-align: center;
   color: #656565;
+}
+
+@media screen and (min-width: 768px) {
+  .conteneur-tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+  }
 }
 
 .recherche {
@@ -173,7 +199,7 @@ footer li {
   border-radius: 15px;
   margin-top: 20px;
   position: relative;
-  box-shadow: 4px 4px 4px lightgrey;
+  box-shadow: 4px 4px 4px lightgray;
 }
 .restaurant-prev__image {
   height: 70%;
@@ -215,12 +241,27 @@ footer li {
   top: 10px;
   right: 10px;
 }
+.restaurant-prev:hover {
+  box-shadow: 10px 10px 10px lightgray;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-prev {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .functioning {
   margin: 30px 0 30px 0;
 }
 .functioning .btn-secondary {
   margin: 10px 0 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .functioning .btn-secondary {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .title-section {

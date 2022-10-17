@@ -3,5 +3,8 @@ nav{
         background-color: #f6f6f6;
         padding: 0 0 10px 0;
         height: 240px;
+        @include tablet {
+            height: auto;
+        }
     }
 }

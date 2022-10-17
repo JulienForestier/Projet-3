@@ -16,6 +16,16 @@
         text-align: center;
         color: #656565;
     }
+    
+}
+
+.conteneur-tablet{
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
 }
 
 

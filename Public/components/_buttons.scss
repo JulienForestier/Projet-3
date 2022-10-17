@@ -6,7 +6,7 @@
     width: 190px;
     padding: 10px;
     margin-top: 20px;
-    background: linear-gradient($secondarycolor,$primarycolor);
+    @include btn-color;
     font-weight: bold;
         
     
@@ -16,17 +16,19 @@
     height: 70px;
     width: 85%;
     max-width: 350px;
+    min-width: 250px;
     padding: 10px;
     border: none;
     border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
     @include box-shadow;
     background-color: #f6f6f6;
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-weight: bold;
-    font-size: 14px;
+    
     i{
         font-size: 17px;
         color: #7e7e7e;
@@ -37,6 +39,13 @@
         position: absolute;
         top: 25px;
         left: -7px;
+    }
+    &:hover{
+        i{
+            color: $primarycolor;
+        }
+        background: lighten($primarycolor, 35%);
+        @include box-shadow(6px,)
     }
     
     

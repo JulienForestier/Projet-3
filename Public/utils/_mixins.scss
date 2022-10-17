@@ -1,3 +1,26 @@
-@mixin box-shadow {
-    box-shadow: 4px 4px 4px lightgrey;
+@mixin box-shadow ($gap: 4px, $color: $shadow-color){
+    box-shadow: $gap $gap $gap $color;
+}
+
+@mixin btn-color($color: $secondarycolor, $color-2: $primarycolor){
+    background: linear-gradient($color,$color-2);
+    &:hover{
+        background: linear-gradient(lighten( $color , 5%), lighten($color-2, 5%));
+        @include box-shadow(6px , )
+    }
+
+}
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoint, tablet)){
+        @content
+    }
+    
+}
+
+@mixin conputer {
+    @media screen and (min-width: map-get($breakpoint, conputer)){
+        @content
+    }
+    
 }
