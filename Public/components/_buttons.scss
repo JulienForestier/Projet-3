@@ -16,7 +16,7 @@
     height: 70px;
     width: 85%;
     max-width: 350px;
-    min-width: 250px;
+    min-width: 200px;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -51,4 +51,47 @@
     
 }
 
+.btn-return{
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
 
+.btn-add{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 45px;
+    width: 85%;
+    max-width: 350px;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+    @include box-shadow;
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+    .cost{
+        font-weight: bold;
+    }
+    .vignette-check{
+        display: none;
+    }
+}

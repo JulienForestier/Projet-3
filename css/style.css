@@ -39,7 +39,7 @@ body h1, body h2, body h3, body h4, body h5 {
   height: 70px;
   width: 85%;
   max-width: 350px;
-  min-width: 250px;
+  min-width: 200px;
   padding: 10px;
   border: none;
   border-radius: 20px;
@@ -69,6 +69,51 @@ body h1, body h2, body h3, body h4, body h5 {
 }
 .btn-secondary:hover i {
   color: #9356DC;
+}
+
+.btn-return {
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+.btn-add {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  height: 45px;
+  width: 85%;
+  max-width: 350px;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 10px 0 5px 0;
+  box-shadow: 4px 4px 4px lightgray;
+}
+.btn-add__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-add__title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn-add p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.btn-add .cost {
+  font-weight: bold;
+}
+.btn-add .vignette-check {
+  display: none;
 }
 
 .vignette {
@@ -269,6 +314,44 @@ footer li {
   font-weight: bold;
   font-family: "Roboto";
   margin: 20px 0 0 20px;
+}
+
+.background-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 288px;
+  z-index: 1;
+}
+
+.restaurant-name {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.restaurant-name .favoris {
+  position: relative;
+}
+.restaurant-name .favoris i {
+  font-size: 22px;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  right: 0px;
+}
+
+.title-part {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
