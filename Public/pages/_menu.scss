@@ -6,9 +6,9 @@
 .menu{
     border-radius: 40px 40px 0 0 ;
     width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 288px;
+    background-color: #f6f6f6;
+    position: relative;
+    top: -40px;
     z-index: 1;
 }
 .restaurant-name{
@@ -31,4 +31,13 @@
     font-size: 18px;
     font-weight:normal ;
     margin-left: 20px;
+    margin-bottom: 10px;
+    &::after{
+        content: "";
+        display: block;
+        width: 45px;
+        height: 2px;
+        margin-top: 2px;
+        background-color: #99e2d0;
+    }
 }
