@@ -13,16 +13,19 @@
 }
 .restaurant-name{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 18px;
+    h2{
+        margin-left: 20px;
+    }
     .favoris{
         position: relative;
+        margin-right: 20px;
+        width: 30px;
         i{
             font-size: 22px;
             position: absolute;
             top: 30px;
-            left: -20px;
-            right: 0px;
         }
     }
 }
@@ -40,4 +43,7 @@
         margin-top: 2px;
         background-color: #99e2d0;
     }
+}
+.btn{
+    margin-top: 50px;
 }

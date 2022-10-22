@@ -86,7 +86,7 @@ body h1, body h2, body h3, body h4, body h5 {
 .btn-add {
   display: block;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: end;
   height: 45px;
   width: 85%;
@@ -97,13 +97,18 @@ body h1, body h2, body h3, body h4, body h5 {
   border-radius: 20px;
   font-size: 14px;
   margin: 10px 0 5px 0;
+  position: relative;
   box-shadow: 4px 4px 4px lightgray;
 }
 .btn-add__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.btn-add__description p {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .btn-add__title {
   font-size: 15px;
@@ -113,15 +118,23 @@ body h1, body h2, body h3, body h4, body h5 {
 .btn-add p {
   margin-top: 0;
   margin-bottom: 4px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .btn-add .cost {
   font-weight: bold;
+  margin-right: 10px;
 }
 .btn-add .vignette-check {
   display: none;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  position: absolute;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  bottom: 0px;
 }
 
 .new {
@@ -354,18 +367,21 @@ footer li {
 
 .restaurant-name {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 18px;
+}
+.restaurant-name h2 {
+  margin-left: 20px;
 }
 .restaurant-name .favoris {
   position: relative;
+  margin-right: 20px;
+  width: 30px;
 }
 .restaurant-name .favoris i {
   font-size: 22px;
   position: absolute;
   top: 30px;
-  left: -20px;
-  right: 0px;
 }
 
 .title-part {
@@ -382,6 +398,10 @@ footer li {
   height: 2px;
   margin-top: 2px;
   background-color: #99e2d0;
+}
+
+.btn {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
