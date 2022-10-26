@@ -307,7 +307,15 @@ footer li {
   right: 20px;
 }
 .restaurant-prev__heading__anim .heart-full {
-  color: linear-gradient(#FF79DA);
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.restaurant-prev__heading__anim .heart-full :hover {
+  opacity: 1;
+  transition: opacity 1s;
 }
 .restaurant-prev .title-card {
   font-weight: bold;
