@@ -22,6 +22,17 @@
     justify-content: center;
     align-items: center;
 }
+.heart-full{
+    color: transparent;
+    background: linear-gradient($secondarycolor, $primarycolor);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    &:hover{
+        opacity: 1;
+        transition: opacity 500ms;
+    }
+}
 
 .vignette-checked{
 display: flex;

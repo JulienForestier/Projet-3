@@ -157,6 +157,18 @@ body h1, body h2, body h3, body h4, body h5 {
   align-items: center;
 }
 
+.heart-full {
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.heart-full:hover {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
 .vignette-checked {
   display: flex;
   justify-content: center;
@@ -260,6 +272,35 @@ footer li {
   margin-top: 5px;
 }
 
+.loading-screen {
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  opacity: 0.7;
+  z-index: 15;
+  position: fixed;
+}
+.loading-screen__anim {
+  font-size: 40px;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.loading-screen p {
+  font-size: 25px;
+  font-family: "Shrikhand";
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 20px;
@@ -305,17 +346,6 @@ footer li {
   position: absolute;
   top: 175px;
   right: 20px;
-}
-.restaurant-prev__heading__anim .heart-full {
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-}
-.restaurant-prev__heading__anim .heart-full :hover {
-  opacity: 1;
-  transition: opacity 1s;
 }
 .restaurant-prev .title-card {
   font-weight: bold;
