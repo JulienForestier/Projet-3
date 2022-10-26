@@ -97,7 +97,6 @@ body h1, body h2, body h3, body h4, body h5 {
   border-radius: 20px;
   font-size: 14px;
   margin: 10px 0 5px 0;
-  position: relative;
   box-shadow: 4px 4px 4px lightgray;
 }
 .btn-add__description {
@@ -124,17 +123,13 @@ body h1, body h2, body h3, body h4, body h5 {
   margin-right: 10px;
 }
 .btn-add .vignette-check {
-  display: none;
   width: 60px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: red;
-  position: absolute;
   border-radius: 0 15px 15px 0;
-  right: 0px;
-  bottom: 0px;
 }
 
 .new {
@@ -311,6 +306,9 @@ footer li {
   top: 175px;
   right: 20px;
 }
+.restaurant-prev__heading__anim .heart-full {
+  color: linear-gradient(#FF79DA);
+}
 .restaurant-prev .title-card {
   font-weight: bold;
   margin-bottom: 5px;
@@ -363,6 +361,10 @@ footer li {
   position: relative;
   top: -40px;
   z-index: 1;
+}
+
+main {
+  background-color: #f6f6f6;
 }
 
 .restaurant-name {
