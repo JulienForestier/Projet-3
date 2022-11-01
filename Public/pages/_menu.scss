@@ -50,3 +50,28 @@ main{
 .btn{
     margin-top: 50px;
 }
+
+@keyframes slidedown {
+    from{
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.entree{
+    opacity: 0;
+    animation: slidedown 1s forwards;
+}
+.plat{
+    opacity: 0;
+    animation: slidedown 1s forwards;
+    animation-delay: 500ms;
+}
+.dessert{
+    opacity: 0;
+    animation: slidedown 1s forwards;
+    animation-delay: 1s;
+}

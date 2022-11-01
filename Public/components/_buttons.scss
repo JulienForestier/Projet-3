@@ -54,17 +54,13 @@
 }
 
 .btn-return{
-    border: none;
-    background-color: white;
     position: absolute;
     top: 20px;
     left: 20px;
     font-size: 20px;
-    cursor: pointer;
 }
 
 .btn-add{
-    display: block;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -78,10 +74,17 @@
     font-size: 14px;
     margin: 10px 0 5px 0;
     @include box-shadow;
+    &:hover{
+        .vignette-check{
+            width: 60px;
+            transition-duration: 1s;
+        }
+    }
     &__description{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 60%;
         p{
             text-overflow: ellipsis;
             overflow: hidden;
@@ -102,12 +105,20 @@
         margin-right: 10px;
     }
     .vignette-check{
-        width: 60px;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
-        border-radius: 0 15px 15px 0;
+        background-color:rgb(153, 226, 208);
+        height: calc(100% + 20px);
+        border-radius: 0 20px 20px 0;
+        position: relative;
+        top: 10px;
+        margin-right: -10px;
+        width: 0;
+        i{
+            font-size: 18px;
+            background-color:  rgb(153, 226, 208);
+            color: white;
+        }
     }
 }
