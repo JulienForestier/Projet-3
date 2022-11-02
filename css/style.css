@@ -130,9 +130,8 @@ body h1, body h2, body h3, body h4, body h5 {
 }
 .btn-add .cost {
   font-weight: bold;
-  margin-right: 10px;
   position: relative;
-  left: 40px;
+  left: 35px;
 }
 .btn-add .vignette-check {
   display: flex;
