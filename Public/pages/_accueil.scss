@@ -9,14 +9,14 @@
 @keyframes waiting-screen {
     0%{
         opacity: 0.7;
-        z-index: 10;
+        z-index: 15;
     }
     99%{
         opacity: 0.7;
     }
     100%{
         opacity: 0;
-        z-index: -50;
+        z-index: -200;
     }
 }
 .loading-screen{
@@ -34,7 +34,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 1;
-        animation: waiting-icone 3s infinite;
+        animation: waiting-icone 1.5s infinite;
     }
     
     p{

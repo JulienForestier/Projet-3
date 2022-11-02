@@ -78,13 +78,24 @@
         .vignette-check{
             width: 60px;
             transition-duration: 1s;
+            i{
+                opacity: 1;
+                transform: rotate(360deg);
+                transition-duration: 500ms;
+            }
+        }
+        .cost{
+            transform: translateX(-40px);
+            
+            transition-duration: 1s;
+
         }
     }
     &__description{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 60%;
+        width: 70%;
         p{
             text-overflow: ellipsis;
             overflow: hidden;
@@ -103,6 +114,8 @@
     .cost{
         font-weight: bold;
         margin-right: 10px;
+        position: relative;
+        left: 40px;
     }
     .vignette-check{
         display: flex;
@@ -119,6 +132,7 @@
             font-size: 18px;
             background-color:  rgb(153, 226, 208);
             color: white;
+            opacity: 0;
         }
     }
 }
