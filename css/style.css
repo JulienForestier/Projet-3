@@ -137,7 +137,7 @@ body h1, body h2, body h3, body h4, body h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(153, 226, 208);
+  background-color: #99E2D0;
   height: calc(100% + 20px);
   border-radius: 0 20px 20px 0;
   position: relative;
@@ -147,7 +147,7 @@ body h1, body h2, body h3, body h4, body h5 {
 }
 .btn-add .vignette-check i {
   font-size: 18px;
-  background-color: rgb(153, 226, 208);
+  background-color: #99E2D0;
   color: white;
   opacity: 0;
 }
@@ -155,7 +155,7 @@ body h1, body h2, body h3, body h4, body h5 {
 .new {
   display: inline-block;
   text-align: center;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #30a387;
   width: 60px;
   height: 15px;
@@ -298,7 +298,7 @@ footer li {
 @keyframes waiting-screen {
   0% {
     opacity: 0.7;
-    z-index: 15;
+    z-index: 50;
   }
   99% {
     opacity: 0.7;
@@ -312,10 +312,10 @@ footer li {
   width: 100%;
   height: 100%;
   background: lightgray;
-  z-index: 15;
+  z-index: 50;
   opacity: 0.7;
   position: fixed;
-  animation: waiting-screen 3s forwards;
+  animation: waiting-screen 2s forwards;
 }
 .loading-screen__anim {
   font-size: 40px;
