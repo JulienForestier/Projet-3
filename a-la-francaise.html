@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./css/prefixed/style.css" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Shrikhand"
+    >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    >
+    <script
+      src="https://kit.fontawesome.com/669baba106.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ohmyfood</title>
+  </head>
+  <body>
+    <!-- header avec un bouton formé avec un lien afin de revenir a la pafe d'acceuil-->
+    <header>
+      <a class="btn-return" href="./index.html">
+        <i class="fa-solid fa-arrow-left"></i
+      ></a>
+      <h1>ohmyfood</h1>
+    </header>
+    <img
+      class="background-img"
+      src="./images/restaurants/la-note-enchantée.jpg"
+      alt="restaurant"
+    >
+    <main>
+      <!-- section qui va contenir tout les plats du restaurants j'ai crée ces plats a l'aide de lien que j'ai stylisé a l'aide de flexbox et que j'ai animé grace au transition-->
+      <section class="menu">
+        <div class="restaurant-name">
+          <h2>À la française</h2>
+          <div class="favoris">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart heart-full"></i>
+          </div>
+        </div>
+
+        <h3 class="title-part">ENTREES</h3>
+        <div class="conteneur conteneur-tablet">
+          <a href="#" class="btn-add entree">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Tartare de poulpe acidulé</p>
+                <p>Aux zestes d'orange</p>
+              </div>
+              <p class="cost">25€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add entree">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Velouté de légumes d'antan</p>
+                <p>Carotte, panais, topinambour</p>
+              </div>
+              <p class="cost">35€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add entree">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Soupe à l'oignon
+                </p>
+                <p>Revisitée</p>
+              </div>
+              <p class="cost">20€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+
+        <h3 class="title-part">PLATS</h3>
+        <div class="conteneur conteneur-tablet">
+          <a href="#" class="btn-add plat">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Coquilles Saint-Jacques</p>
+                <p>Accompagnées d'une purée de panais</p>
+              </div>
+              <p class="cost">40€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add plat">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Magret de canard</p>
+                <p>Et parmentier de pommes de terre</p>
+              </div>
+              <p class="cost">35€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add plat">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Pigeonneau d’Ille-et-Vilaine</p>
+                <p>Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <p class="cost">44€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+        </div>
+
+        <h3 class="title-part">DESSERT</h3>
+        <div class="conteneur conteneur-tablet">
+          <a href="#" class="btn-add dessert">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Pétales de violettes glacés</p>
+                <p>Et purée de noisettes</p>
+              </div>
+              <p class="cost">18€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add dessert">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Fondant au chocolat</p>
+                <p>Revisité</p>
+              </div>
+              <p class="cost">22€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add dessert">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Millefeuille croustillant</p>
+                <p>Myrtilles et pâte d’amande</p>
+              </div>
+              <p class="cost">23€</p>
+            </div>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+        </div>
+        <div class="conteneur">
+          <button class="btn">Commander</button>
+        </div>
+      </section>
+    </main>
+    <!-- le footer est commun au page menu et d'acceuil-->
+    <footer>
+      <h4>ohmyfood</h4>
+      <ul>
+        <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+        <li>Mentions légales</li>
+        <li><a href="mailto:ohmyfood@gmail.com">contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
