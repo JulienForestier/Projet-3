@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./css/style.css" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Shrikhand"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
-    >
+    />
     <script
       src="https://kit.fontawesome.com/669baba106.js"
       crossorigin="anonymous"
@@ -19,16 +19,20 @@
     <title>ohmyfood</title>
   </head>
   <body>
+    <!-- header avec un bouton formé avec un lien afin de revenir a la pafe d'acceuil-->
     <header>
-        <a  class="btn-return " href="./index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+      <a class="btn-return" href="./index.html">
+        <i class="fa-solid fa-arrow-left"></i
+      ></a>
       <h1>ohmyfood</h1>
     </header>
     <img
       class="background-img"
       src="./images/restaurants/la-note-enchantée.jpg"
       alt="restaurant"
-    >
+    />
     <main>
+      <!-- section qui va contenir tout les plats du restaurants j'ai crée ces plats a l'aide de lien que j'ai stylisé a l'aide de flexbox et que j'ai animé grace au transition-->
       <section class="menu">
         <div class="restaurant-name">
           <h2>La note enchantée</h2>
@@ -43,10 +47,10 @@
           <a href="#" class="btn-add entree">
             <div class="btn-add__conteneur">
               <div class="btn-add__description">
-              <p class="btn-add__title">Ravioles de foie gras</p>
-              <p>Accompagnés de leur crème à la truffe</p>
+                <p class="btn-add__title">Ravioles de foie gras</p>
+                <p>Accompagnés de leur crème à la truffe</p>
               </div>
-              <p class="cost">25€</p> 
+              <p class="cost">25€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -54,23 +58,11 @@
           </a>
           <a href="#" class="btn-add entree">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Caviar osciètre</p>
-              <p>Sur blini à la farine de blé noir</p>
-            </div >
-            <p class="cost">35€</p>
-          </div>
-            <div class="vignette-check">
-              <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-          </a>
-          <a href="#" class="btn-add entree">
-            <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Homard et espuma de potiron</p>
-              <p>Mariné aux zestes d'orange</p>
-            </div>
-            <p class="cost">20€</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Caviar osciètre</p>
+                <p>Sur blini à la farine de blé noir</p>
+              </div>
+              <p class="cost">35€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -78,11 +70,23 @@
           </a>
           <a href="#" class="btn-add entree">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Foie gras de canard cuit entier</p>
-              <p>Confiture de figue et pain toasté</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Homard et espuma de potiron</p>
+                <p>Mariné aux zestes d'orange</p>
+              </div>
+              <p class="cost">20€</p>
             </div>
-            <p class="cost">35€</p>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add entree">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Foie gras de canard cuit entier</p>
+                <p>Confiture de figue et pain toasté</p>
+              </div>
+              <p class="cost">35€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -94,23 +98,11 @@
         <div class="conteneur conteneur-tablet">
           <a href="#" class="btn-add plat">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Noix de coquilles Saint-Jacques</p>
-              <p>Sur lit de purée de céleri-rave</p>
-            </div>
-            <p class="cost">40€</p>
-            </div>
-            <div class="vignette-check">
-              <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-          </a>
-          <a href="#" class="btn-add plat">
-            <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Langoustine poêlée</p>
-              <p>Purée de patate douce</p>
-            </div>
-            <p class="cost">35€</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Noix de coquilles Saint-Jacques</p>
+                <p>Sur lit de purée de céleri-rave</p>
+              </div>
+              <p class="cost">40€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -118,11 +110,23 @@
           </a>
           <a href="#" class="btn-add plat">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Mijoté de queue de boeuf</p>
-              <p>Et riz sauvage aux zestes de citron</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Langoustine poêlée</p>
+                <p>Purée de patate douce</p>
+              </div>
+              <p class="cost">35€</p>
             </div>
-            <p class="cost">44€</p>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add plat">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Mijoté de queue de boeuf</p>
+                <p>Et riz sauvage aux zestes de citron</p>
+              </div>
+              <p class="cost">44€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -134,23 +138,11 @@
         <div class="conteneur conteneur-tablet">
           <a href="#" class="btn-add dessert">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Macaron noisette et chocolat</p>
-              <p>Glace au caramel brun et sel de Guérande</p>
-            </div>
-            <p class="cost">18€</p>
-            </div>
-            <div class="vignette-check">
-              <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-          </a>
-          <a href="#" class="btn-add dessert">
-            <div class="btn-add__conteneur">
-            <div class="btn-add__description"> 
-              <p class="btn-add__title">Baba au rhum revisité </p>
-              <p>Avec son coulis de citron</p>
-            </div>
-            <p class="cost">22€</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Macaron noisette et chocolat</p>
+                <p>Glace au caramel brun et sel de Guérande</p>
+              </div>
+              <p class="cost">18€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -158,11 +150,23 @@
           </a>
           <a href="#" class="btn-add dessert">
             <div class="btn-add__conteneur">
-            <div class="btn-add__description">
-              <p class="btn-add__title">Tarte au citron meringuée </p>
-              <p>Déstructurée</p>
+              <div class="btn-add__description">
+                <p class="btn-add__title">Baba au rhum revisité</p>
+                <p>Avec son coulis de citron</p>
+              </div>
+              <p class="cost">22€</p>
             </div>
-            <p class="cost">23€</p>
+            <div class="vignette-check">
+              <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+          </a>
+          <a href="#" class="btn-add dessert">
+            <div class="btn-add__conteneur">
+              <div class="btn-add__description">
+                <p class="btn-add__title">Tarte au citron meringuée</p>
+                <p>Déstructurée</p>
+              </div>
+              <p class="cost">23€</p>
             </div>
             <div class="vignette-check">
               <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -174,6 +178,7 @@
         </div>
       </section>
     </main>
+    <!-- le footer est commun au page menu et d'acceuil-->
     <footer>
       <h4>ohmyfood</h4>
       <ul>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Public/main.scss:./css/style.css"
+    "sass": "sass --watch ./Public/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,15 @@
   },
   "author": "JulienForestier",
   "license": "ISC",
+  "browserslist": "last 4 versions ",
   "bugs": {
     "url": "https://github.com/JulienForestier/Projet-3/issues"
   },
   "homepage": "https://github.com/JulienForestier/Projet-3#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.55.0"
   }
 }

@@ -1,155 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./css/style.css" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Shrikhand"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
-    >
+    />
     <script
       src="https://kit.fontawesome.com/669baba106.js"
       crossorigin="anonymous"
     ></script>
     <title>ohmyfood</title>
   </head>
-
+<!-- j'ai crée une div pour faire mon loading sceen-->
   <body>
     <div class="loading-screen">
-      <p>Loading<br><i class="fa-solid fa-spinner loading-screen__anim"></i>
+      <p>
+        Loading<br /><i class="fa-solid fa-spinner loading-screen__anim"></i>
       </p>
     </div>
     <header>
       <h1>ohmyfood</h1>
     </header>
-    <nav>
-      <form class="recherche" method="post" action="traitement.php">
-        <i class="fa-solid fa-location-dot"></i>
-        <input
-          type="search"
-          name="localisation"
-          id="localisation"
-          placeholder="Paris, Belleville"
-        >
-      </form>
-      <div class="conteneur">
-        <p class="conteneur__texte conteneur--bold">
-          Réservez le menu qui vous convient
-        </p>
-        <p class="conteneur__description">
-          Découvrez des restaurants d'exception, séléctionnés par nos soins.
-        </p>
-        <button class="btn">
-          Explorer nos restaurants
-        </button>
-      </div>
-    </nav>
-    <section class="functioning">
-      <h2 class="title-section">Fonctionnement</h2>
-      <div class="conteneur conteneur-tablet">
-        <button class="btn-secondary">
-          <span class="vignette">1</span>
+      <!--J'ai utilisé la balise nav car pour moi elle sert a naviguer sur le site avec la barre de recherche ainsi que le bouton pour explorer les différents restaurants-->
+      <nav>
+        <form class="recherche" method="post" action="traitement.php">
+          <i class="fa-solid fa-location-dot"></i>
+          <input
+            type="search"
+            name="localisation"
+            id="localisation"
+            placeholder="Paris, Belleville"
+          />
+        </form>
+        <div class="conteneur">
+          <p class="conteneur__texte conteneur--bold">
+            Réservez le menu qui vous convient
+          </p>
+          <p class="conteneur__description">
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+          <button class="btn">Explorer nos restaurants</button>
+        </div>
+      </nav>
+      <!-- une section fonctionnement avec des boutons qui explique les différentes étapes de fonctionnements de la livraison -->
+      <section class="functioning">
+        <h2 class="title-section">Fonctionnement</h2>
+        <div class="conteneur conteneur-tablet">
+          <button class="btn-secondary">
+            <span class="vignette">1</span>
             <i class="fa-solid fa-mobile-screen-button"></i>
             Choisissez un restaurant
-        </button>
-        <button class="btn-secondary">
-          <span class="vignette">2</span>
+          </button>
+          <button class="btn-secondary">
+            <span class="vignette">2</span>
             <i class="fa-solid fa-list-ul"></i>
             Composez votre menu
-        </button>
-        <button class="btn-secondary">
-          <span class="vignette">3</span>
+          </button>
+          <button class="btn-secondary">
+            <span class="vignette">3</span>
             <i class="fa-sharp fa-solid fa-store"></i>
             Dégustez au restaurant
-        </button>
-      </div>
-    </section>
-    <section class="restaurant">
-      <h3 class="title-section">Restaurants</h3>
-      <div class="conteneur conteneur-tablet">
-        <a href="#" class="restaurant-prev">
-          <div class="restaurant-prev__image">
-            <img
-              src="./images/restaurants/la-palette-du-gout.jpg"
-              alt="prev_restaurant"
-            >
-          </div>
-          <span class="new">Nouveau</span>
-          <div class="restaurant-prev__heading">
-            <div class="restaurant-prev__heading__description">
-              <p class="title-card">La palette du gout</p>
-              <p>Ménilmontant</p>
+          </button>
+        </div>
+      </section>
+      <!--cette section sert a mettre les cards de prévisualisation des restaurants que j'ai englobé dans des liens-->
+      <section class="restaurant">
+        <h3 class="title-section">Restaurants</h3>
+        <div class="conteneur conteneur-tablet">
+          <a href="#" class="restaurant-prev">
+            <div class="restaurant-prev__image">
+              <img
+                src="./images/restaurants/la-palette-du-gout.jpg"
+                alt="prev_restaurant"
+              />
             </div>
-            <div class="restaurant-prev__heading__anim">
+            <span class="new">Nouveau</span>
+            <div class="restaurant-prev__heading">
+              <div class="restaurant-prev__heading__description">
+                <p class="title-card">La palette du gout</p>
+                <p>Ménilmontant</p>
+              </div>
+              <div class="restaurant-prev__heading__anim">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-heart heart-full"></i>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="./la-note-enchantee.html" class="restaurant-prev">
-          <div class="restaurant-prev__image">
-            <img
-              src="./images/restaurants/la-note-enchantée.jpg"
-              alt="prev_restaurant"
-            >
-          </div>
-          <span class="new">Nouveau</span>
-          <div class="restaurant-prev__heading">
-            <div class="restaurant-prev__heading__description">
-              <p class="title-card">La Note enchantée</p>
-              <p>Charonne</p>
+          </a>
+          <a href="./la-note-enchantee.html" class="restaurant-prev">
+            <div class="restaurant-prev__image">
+              <img
+                src="./images/restaurants/la-note-enchantée.jpg"
+                alt="prev_restaurant"
+              />
             </div>
-            <div class="restaurant-prev__heading__anim">
-              <i class="fa-regular fa-heart "></i>
-              <i class="fa-solid fa-heart heart-full"></i>
+            <span class="new">Nouveau</span>
+            <div class="restaurant-prev__heading">
+              <div class="restaurant-prev__heading__description">
+                <p class="title-card">La Note enchantée</p>
+                <p>Charonne</p>
+              </div>
+              <div class="restaurant-prev__heading__anim">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#" class="restaurant-prev">
-          <div class="restaurant-prev__image">
-            <img
-              src="./images/restaurants/a-la-francaise.jpg"
-              alt="prev_restaurant"
-            >
-          </div>
-          <span class="new">Nouveau</span>
-          <div class="restaurant-prev__heading">
-            <div class="restaurant-prev__heading__description">
-              <p class="title-card">A la francaise</p>
-              <p>Cité Rouge</p>
+          </a>
+          <a href="#" class="restaurant-prev">
+            <div class="restaurant-prev__image">
+              <img
+                src="./images/restaurants/a-la-francaise.jpg"
+                alt="prev_restaurant"
+              />
             </div>
-            <div class="restaurant-prev__heading__anim">
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-solid fa-heart heart-full"></i>
+            <span class="new">Nouveau</span>
+            <div class="restaurant-prev__heading">
+              <div class="restaurant-prev__heading__description">
+                <p class="title-card">A la francaise</p>
+                <p>Cité Rouge</p>
+              </div>
+              <div class="restaurant-prev__heading__anim">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#" class="restaurant-prev">
-          <div class="restaurant-prev__image">
-            <img
-              src="./images/restaurants/le-délice-des-sens.jpg"
-              alt="prev_restaurant"
-            >
-          </div>
-          <span class="new">Nouveau</span>
-          <div class="restaurant-prev__heading">
-            <div class="restaurant-prev__heading__description">
-              <p class="title-card">Le délice des sens</p>
-              <p>Folie-Méricourt</p>
+          </a>
+          <a href="#" class="restaurant-prev">
+            <div class="restaurant-prev__image">
+              <img
+                src="./images/restaurants/le-délice-des-sens.jpg"
+                alt="prev_restaurant"
+              />
             </div>
-            <div class="restaurant-prev__heading__anim">
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-solid fa-heart heart-full"></i>
+            <span class="new">Nouveau</span>
+            <div class="restaurant-prev__heading">
+              <div class="restaurant-prev__heading__description">
+                <p class="title-card">Le délice des sens</p>
+                <p>Folie-Méricourt</p>
+              </div>
+              <div class="restaurant-prev__heading__anim">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart heart-full"></i>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-    </section>
+          </a>
+        </div>
+      </section>
+    <!--footer qui est commun avec les page menu au niveau responsive je n'ai pas changé le style car il me parrait le plus cohérent comme cela-->
     <footer>
       <h4>ohmyfood</h4>
       <ul>
