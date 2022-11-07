@@ -9,24 +9,22 @@
 @keyframes waiting-screen {
     0%{
         opacity: 0.7;
-        z-index: 50;
-    }
-    99%{
-        opacity: 0.7;
+        z-index: 200;
     }
     100%{
         opacity: 0;
-        z-index: -200;
+        z-index: -1;
     }
 }
 .loading-screen{
     width: 100%;
     height: 100%;
     background: lightgray;
-    z-index: 50;
-    opacity: 0.7;
     position: fixed;
-    animation: waiting-screen 2s forwards;
+    opacity: 0.7;
+    z-index: 200;
+    animation: waiting-screen 0s forwards;
+    animation-delay: 3s;
     &__anim{
         font-size: 40px;
         color: transparent;
@@ -34,7 +32,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 1;
-        animation: waiting-icone 1.5s infinite;
+        animation: waiting-icone 3s;
     }
     
     p{
