@@ -77,11 +77,11 @@
     &:hover{
         .vignette-check{
             width: 70px;
-            transition-duration: 1s;
+            transition: all 1s;
             i{
                 opacity: 1;
                 transform: rotate(360deg);
-                transition-duration: 1s;
+                transition: all 1s;
             }
         }
 
@@ -128,11 +128,13 @@
         top: 10px;
         margin-right: -10px;
         width: 0;
+        transition: all 1s;
         i{
             font-size: 18px;
             background-color:  $thirdcolor;
             color: white;
             opacity: 0;
+            transition: all 1s;
         }
     }
 }
