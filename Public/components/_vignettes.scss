@@ -28,6 +28,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
+    transition: opacity 500ms;
+    cursor: pointer;
     &:hover{
         opacity: 1;
         transition: opacity 500ms;
